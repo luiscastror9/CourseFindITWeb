@@ -54,17 +54,48 @@ header .buscar form button:hover {
 }
 
 
+
 header{
 	padding-top:0;
 	margin-top: 0;
+	z-index:9999;
 }
-#separador{ 
-	height:10px;  
-	background-color:#0a055aad; 
-  }
+
+.menu ul{
+                background:#303990;
+                display:flex;
+                /*Para que se coloquen en una linea*/
+                list-style:none;
+
+            }
+            .menu ul ul{
+                display:none; /**/
+            }
+           
+            .menu a{
+                display:block;
+                padding:15px 20px;
+                color:#fff;
+                text-decoration:none;
+            }
+            .menu a:hover{
+                background:rgba(0,0,0,0.3);
+            }
+
+            .menu ul .submenu{
+                margin-right: 150px;
+            }
+            .menu ul li:hover ul{
+                display:block;
+                position:absolute;
+            }
+
  
 section {
 	margin-top: 20px;
+	z-index: -1;
+	position:relative;
+
 }
 
 section .box-col {
